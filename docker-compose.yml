@@ -1,0 +1,6 @@
+version: "3"
+services:
+  employee-jdbc:
+    image: person-service
+    ports:
+      - "9090:9090"

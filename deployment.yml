@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: person-service-example
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: person-service-example
+    spec:
+      containers:
+        - name: person-service-example
+          image: person-service
+          ports:
+            - containerPort: 9090
